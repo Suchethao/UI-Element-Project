@@ -1,0 +1,98 @@
+body {
+    margin:0;
+    background-color:#fafafa;
+    font-family: 'Cormorant+Garamond',sans-serif;
+    font-style:light;
+}
+  
+.cards{
+    display:grid;
+    background-color:#fafafa;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(4,200px);
+    margin-left:0;
+    margin-right:0;
+}
+
+.cards img {
+display:block;
+margin-left:auto;
+margin-right:auto;
+height:100%;
+}
+.card {
+    background-color: #fafafa;
+    margin:10px;
+    cursor: pointer;
+}
+.popuptext h1{
+    color:black;
+    background-color: #fafafa;
+    font-size: 40px;
+    font-family: 'Cormorant+Garamand',sans-serif;
+    font-weight:300;
+    padding:40px;
+
+}
+
+.popuptext h2{
+    color:black;
+    background-color:#fafafa;
+    font-size: 18px;
+    font-family: 'Cormorant+Garamand';
+    width:75%;
+    font-style:light;
+    padding:20px;
+}
+.card .popuptext {
+    visibility: hidden;
+    background-color:#fafafa;
+    color: #0000;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    text-align: left;
+    border-style: solid;
+    border-color:black;
+}
+.card .popuptext::after {
+    background-color: #fafafa;
+    position: absolute;
+    visibility: visible;
+    border-style: solid;
+    border-color: #fafafa;
+    color:black;
+    
+  }
+  .popuptext button{
+    display:block;
+    margin:20px;
+  }
+
+.popuptext img {
+background-color:#fafafa;
+float:left;
+padding: 0 20px 20px 0;
+width:20%;
+}
+
+.card .show{
+background-color:#fafafa;
+visibility: visible;
+-webkit-animation: fadeIn 1s;
+animation: fadeIn 1s;
+display:block;
+margin-left: auto;
+margin-right:auto;
+}
+
+@-webkit-keyframes fadeIn {
+from {opacity: 0;}
+to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+ from {opacity: 0;}
+to {opacity:1 ;}
+  }
